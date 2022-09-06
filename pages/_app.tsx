@@ -23,6 +23,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
                 <meta name="theme-color" content="#317EFB" />
             </Head>
             <Layout>
+                {/*@ts-ignore*/}
                 <Component {...pageProps} />
             </Layout>
         </AppContextProvider>
