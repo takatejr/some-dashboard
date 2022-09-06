@@ -1,0 +1,32 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(200px, 4fr) minmax(600px, 16fr);
+    grid-template-rows: minmax(60px, 60px) 1fr;
+    grid-template-areas:
+        "header header"
+        "nav main";
+}
+
+.nav {
+    background-color: var(--aside-theme-color);
+    color: var(--aside-text-color);
+    display: grid;
+    grid-area: nav;
+}
+
+.header {
+    display: grid;
+    grid-area: header;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-theme-color);
+    color: var(--main-text-color);
+    grid-area: main;
+    overflow: auto;
+}

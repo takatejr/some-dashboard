@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
+
+@import "./styles/norm";
+
+:root {
+    //main colors
+    --main-theme-color: #f9fcfe;
+    --main-text-color: #1b2559;
+
+    //aside colors
+    --aside-theme-color: #ffffff;
+    --aside-text-color: #8a96ba;
+
+    //button colors
+    --btn-text-main-color: #0070c9;
+
+    //utils
+    --shadow-normal: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dark {
+    //main colors
+    --main-theme-color: black;
+    --main-text-color: #fafafa;
+
+    //aside colors
+    --aside-theme-color: blue;
+    --aside-text-color: #fafafa;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
