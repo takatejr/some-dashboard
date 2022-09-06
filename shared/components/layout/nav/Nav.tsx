@@ -99,6 +99,7 @@ export const Nav = memo(() => {
                                 sx={{
                                     "&.Mui-selected": {
                                         color: "var(--main-text-color)",
+                                        backgroundColor: "var(--aside-theme-color)"
                                     },
                                     "&.Mui-selected > div > svg": {
                                         fill: "var(--btn-text-main-color)",

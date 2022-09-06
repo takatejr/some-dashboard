@@ -36,10 +36,10 @@ export const DashboardPage = () => {
                         <Btn onClick={() => console.log("hey")} text={"Zobacz pełną listę"}></Btn>
                     </DashboardWrapper>
                     <div className={"grid grid-cols-2 gap-3"}>
-                        <DashboardWrapper title={""} customCSS={{ padding: 0 }}>
+                        <DashboardWrapper title={""} customCSS={{ padding: 0, height: '190px' }}>
                             <Image src={"/pro_bono.png"} height={"100%"} width={"100%"} layout={"responsive"}></Image>
                         </DashboardWrapper>
-                        <DashboardWrapper title={"Your EOND history"} subTitle={"Nie uczestniczysz w żadnym projekcie"}>
+                        <DashboardWrapper title={"Your EOND history"} subTitle={"Nie uczestniczysz w żadnym projekcie"} customCSS={{height: '180px'}}>
                             <Btn onClick={() => console.log("hey")} text={"Zobacz pełną listę"}></Btn>
                         </DashboardWrapper>
                     </div>
